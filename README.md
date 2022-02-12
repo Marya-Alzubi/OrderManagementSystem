@@ -1,60 +1,82 @@
-<p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Yii 2 Advanced Project Template</h1>
-    <br>
-</p>
+# Syara Order Management System 
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
-
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
-
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
-
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
-
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![build](https://github.com/yiisoft/yii2-app-advanced/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-app-advanced/actions?query=workflow%3Abuild)
-
-DIRECTORY STRUCTURE
--------------------
-
+## Directions to use the frontend app code:
+1. **clone the repository**
+2. **Install composer packages:**
 ```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
+cd OrderManagementSystem
+composer install
 ```
+3. **setup the main-local.php file: (Location common -> config) **
+```
+change the database name 
+```
+4. **Migrate and insert records**
+```
+php yii migrate
+```
+5. in cmd write to open the app in the localhost:
+```
+php yii serve --docroot="frontend/web/"
+```
+6. **Happy Coding !!**
+
+## Directions to use the API Versioning code:
+**The same steps above but change step 5 to be:**
+```
+php yii serve --docroot="api/web/"
+```
+**To view v1/customers write in URL:**
+shwoing as array of objects with the orders object for each customer.
+```
+http://localhost:8080/v1/customers
+```
+**To view v1/orders write in URL:**
+shwoing as array of objects with the customer object for each order.
+```
+http://localhost:8080/v1/orders
+```
+.
+.
+.
+.
+## Images from the Frontend app:
+**The Home page:**
+
+![main-page](https://user-images.githubusercontent.com/71829413/153700776-7694e214-5955-4eb2-8ced-812b64ccec22.PNG)
+
+
+**Customers Crud:**
+![customers-index](https://user-images.githubusercontent.com/71829413/153700683-41339bce-a4c3-45bf-a275-bfd4b05f3ae3.PNG)
+
+![customers-create](https://user-images.githubusercontent.com/71829413/153700691-9fb5d38c-13a8-40b8-8291-7eeb01c7923b.PNG)
+
+![customers-create-error](https://user-images.githubusercontent.com/71829413/153700698-5ba29fa2-b704-47c1-95d4-764304c3aad0.PNG)
+
+![customers-view](https://user-images.githubusercontent.com/71829413/153700703-5959b939-efbc-4440-a662-a82adbd32b1b.PNG)
+
+![customers-update](https://user-images.githubusercontent.com/71829413/153700706-3bc3490a-960c-462b-95fd-11d646ae8814.PNG)
+
+**Orders Crud:**
+![orders-index](https://user-images.githubusercontent.com/71829413/153700725-1a7e5aa4-e799-4c3a-85ce-bfae4fbbed1c.PNG)
+
+![orders-create](https://user-images.githubusercontent.com/71829413/153700735-8fe6c5d7-4b96-480d-900d-db6573752e44.PNG)
+
+![orders-create-error1](https://user-images.githubusercontent.com/71829413/153700737-602638b7-29b9-423c-848a-eecb55c737e8.PNG)
+
+![orders-create-error2](https://user-images.githubusercontent.com/71829413/153700738-9a56f3e9-7f7d-4e30-a7a3-84aaa40dc230.PNG)
+
+![orders-view](https://user-images.githubusercontent.com/71829413/153700744-2fd6df58-c9ae-4bbb-8056-d17a99b9a73b.PNG)
+
+![orders-update](https://user-images.githubusercontent.com/71829413/153700746-1160ffa1-524f-40ec-93e4-99366b21e82f.PNG)
+
+## Images from the API Verioning:
+**[v1/customers]  shwoing as array of objects with the orders object for each customer.**
+
+![v1-customers](https://user-images.githubusercontent.com/71829413/153700818-b984dac8-af49-44c9-8a02-4e8482a127aa.PNG)
+
+**[v1/orders] shwoing as array of objects with the customer object for each order.**
+
+![v1-orders](https://user-images.githubusercontent.com/71829413/153700906-6b4789ef-4af4-4496-b123-10435d69948f.PNG)
+
+
