@@ -1,4 +1,4 @@
-# Syara Order Management System 
+# Syarah Order Management System 
 
 ## Directions to use the frontend app code:
 1. **clone the repository**
