@@ -1,21 +1,26 @@
 # Syarah Order Management System 
 
 ## Directions to use the frontend app code:
-1. **clone the repository**
-2. **Install composer packages:**
+1. **Install the latest composer packages:**
 ```
-cd OrderManagementSystem
 composer install
 ```
-3. **setup the main-local.php file: (Location common -> config) **
+2. **clone the repository on your local desk then open the project directory**
 ```
-change the database name 
+git clone https://github.com/Marya-Alzubi/Syarah_Yii2_PHP_OrderManagementSystem_task
+```
+```
+cd Syarah_Yii2_PHP_OrderManagementSystem_task
+```
+3. **setup the main-local.php file: (file Location: common -> config)**
+```
+change the database name to be matched with the name of youe database on phpMyAdmin
 ```
 4. **Migrate and insert records**
 ```
 php yii migrate
 ```
-5. in cmd write to open the app in the localhost:
+5. **in cmd write the below to open the app in the localhost server:**
 ```
 php yii serve --docroot="frontend/web/"
 ```
@@ -71,11 +76,11 @@ http://localhost:8080/v1/orders
 ![orders-update](https://user-images.githubusercontent.com/71829413/153700746-1160ffa1-524f-40ec-93e4-99366b21e82f.PNG)
 
 ## Images from the API Verioning:
-**[v1/customers]  shwoing as array of objects with the orders object for each customer.**
+**[v1/customers]  shwoing as array of objects with the orders object for each customer:**
 
 ![v1-customers](https://user-images.githubusercontent.com/71829413/153700818-b984dac8-af49-44c9-8a02-4e8482a127aa.PNG)
 
-**[v1/orders] shwoing as array of objects with the customer object for each order.**
+**[v1/orders] shwoing as array of objects with the customer object for each order:**
 
 ![v1-orders](https://user-images.githubusercontent.com/71829413/153700906-6b4789ef-4af4-4496-b123-10435d69948f.PNG)
 
