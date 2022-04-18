@@ -1,6 +1,6 @@
-![unnamed](https://user-images.githubusercontent.com/71829413/163796308-55dfcff3-ff88-40cd-9d99-cfabdad186a7.png)
-
 # Syarah Order Management System 
+![unnamed](https://user-images.githubusercontent.com/71829413/163796308-55dfcff3-ff88-40cd-9d99-cfabdad186a7.png)
+----------------------------------------------------------------------
 
 ## Directions to use the frontend app code:
 1. **Install the latest composer packages:**
